@@ -21,6 +21,10 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    img {
+        pointer-events: none
+    }
+
     html {
         font-size: 62.5%;
     }
@@ -239,106 +243,24 @@
     @keyframes words {
 
         0%,
-        20% {
+        25% {
             content: "Programador em Node.JS";
         }
 
-        21%,
-        40% {
+        26%,
+        50% {
             content: "Criador de fontes do Hydra";
         }
 
-        41%,
-        60% {
-            content: "Criador de bots do Discord";
-        }
-
-        61%,
-        80% {
+        51%,
+        75% {
             content: "Youtuber";
         }
 
-        81%,
+        76%,
         100% {
             content: "T.I";
         }
-    }
-
-    .lang-menu {
-        width: 100px;
-        text-align: right;
-        font-weight: bold;
-        margin-top: 25px;
-        position: relative;
-    }
-
-    .lang-menu .selected-lang {
-        display: flex;
-        justify-content: space-between;
-        line-height: 2;
-        cursor: pointer;
-    }
-
-
-    .lang-menu .selected-lang:before {
-        content: '';
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        background-image: url('https://coohzitos.tixte.co/r/brazil-flag-icon-64.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .lang-menu ul {
-        margin: 0;
-        padding: 0;
-        display: none;
-        background-color: #fff;
-        border: 1px solid #f8f8f8;
-        position: absolute;
-        top: 45px;
-        right: 0px;
-        width: 125px;
-        border-radius: 5px;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .lang-menu ul li {
-        list-style: none;
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .lang-menu ul li a {
-        text-decoration: none;
-        width: 125px;
-        padding: 5px 10px;
-        display: block;
-    }
-
-    .lang-menu ul li:hover {
-        background-color: #f2f2f2;
-    }
-
-    .lang-menu ul li a:before {
-        content: '';
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        vertical-align: middle;
-        margin-right: 10px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .en:before {
-        background-image: url(https://www.countryflags.io/us/flat/32.png);
-    }
-
-    .lang-menu:hover ul {
-        display: block;
     }
 
     @media (max-width: 1000px) {
@@ -395,13 +317,14 @@
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="https://coohzitos.tixte.co/r/logo.jpg" alt="EU" />
+            <img src="https://coohzitos.tixte.co/r/logo.jpg" alt="CoohCooh" />
         </div>
         <div class="home-content">
             <h1>Prazer, Sou o <span>CoohCooh</span></h1>
             <h3 class="typing-text">Eu sou <span></span></h3>
             <div class="social-icon">
                 <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.youtube.com/@Coohzitos"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </section>
