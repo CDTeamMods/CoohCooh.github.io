@@ -298,7 +298,7 @@
     <header>
         <nav>
             <a href="#" class="active">Inicio</a>
-            <a href="./coohcooh.json">Fontes</a>
+            <a class="install-button">Fontes</a>
         </nav>
         <!---
         <div class="layout_1">
@@ -331,9 +331,19 @@
 </body>
 
 <script>
-    document.addEventListener("contextmenu", function(event) {
-      event.preventDefault();
+    document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
     });
-  </script>
+</script>
+<script type="module">
+    const c = document.querySelectorAll(".install-button");
+
+    c.forEach((t) => {
+        t.addEventListener("click", () => {
+            const e = new URLSearchParams({ urls: `https://coohcooh.github.io/coohcooh.json` });
+            window.location.href = `hydralauncher://install-source?${e.toString()}`;
+        });
+    });
+</script>
 
 </html>
