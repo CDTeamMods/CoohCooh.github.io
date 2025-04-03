@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LorenzoTI - Home</title>
+    <title>CDTeam - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="icon" type="image/png" href="./icons/icon.png">
+
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
@@ -242,11 +244,16 @@
     @keyframes words {
 
         0%,
-        50% {
+        33% {
             content: "Programador em Node.JS";
         }
 
-        51%,
+        34%,
+        66% {
+            content: "Dono da CDTeam";
+        }
+
+        67%,
         100% {
             content: "T.I";
         }
@@ -403,7 +410,7 @@
 
 <body>
     <div class="logo-layout">
-        <a href="#" class="logo">LorenzoTI</a>
+        <a href="#" class="logo">CDTeam Projetos</a>
     </div>
     <div class="dialog-overlay" id="dialog-overlay" onclick="closeDialog(event)">
         <div class="dialog" onclick="event.stopPropagation()">
@@ -420,7 +427,6 @@
                 <button onclick="copyChangelog()">Copiar</button>
                 <button onclick="openLogs()">Change Logs</button>
                 <button onclick="openHydra()">Abrir Hydra</button>
-                <button onclick="openDiscord()">Discord</button>
             </div>
         </div>
     </div>
@@ -439,13 +445,14 @@
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="https://coohzitos.tixte.co/r/logo_lorenzoti.jpg" alt="LorenzoTI" />
+            <img src="http://files.cdteam.xyz/r/logo_coohcooh.jpeg" alt="CDTeam Logo" />
         </div>
         <div class="home-content">
             <h1>Prazer, me chamo <span>Lorenzo</span></h1>
             <h3 class="typing-text">Eu sou <span></span></h3>
             <div class="social-icon">
                 <a href="https://www.youtube.com/@Coohzitos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.gg/6wCYuxKKzF" target="_blank"><i class="fa-brands fa-discord"></i></a>
             </div>
         </div>
     </section>
@@ -475,7 +482,7 @@
     }
 
     function copyChangelog() {
-        navigator.clipboard.writeText("https://lorenzoti.com/coohcooh.json").then(() => alert("Link Copiado"))
+        navigator.clipboard.writeText("https://cdteam.xyz/coohcooh.json").then(() => alert("Link Copiado"))
     }
 
     function handleEscapeKey(event) {
@@ -485,16 +492,12 @@
     }
 
     function openLogs() {
-        window.location.href = "https://lorenzoti.com/changelog.txt";
+        window.location.href = "https://cdteam.xyz/changelog.txt";
     }
 
     function openHydra() {
-        const e = new URLSearchParams({ urls: `https://lorenzoti.com/coohcooh.json` });
+        const e = new URLSearchParams({ urls: `https://cdteam.xyz/coohcooh.json` });
         window.location.href = `hydralauncher://install-source?${e.toString()}`;
-    }
-
-    function openDiscord() {
-        window.location.href = "https://discord.gg/6wCYuxKKzF"
     }
 </script>
 
