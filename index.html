@@ -68,10 +68,6 @@
         transition: 0.5s ease;
     }
 
-    .logo:hover {
-        transform: scale(1.1);
-    }
-
     nav a {
         font-size: 1.8rem;
         color: white;
@@ -410,37 +406,25 @@
 
 <body>
     <div class="logo-layout">
-        <a href="#" class="logo">CDTeam Projetos</a>
+        <a class="logo">CDTeam Projetos</a>
     </div>
     <div class="dialog-overlay" id="dialog-overlay" onclick="closeDialog(event)">
         <div class="dialog" onclick="event.stopPropagation()">
             <h3>Últimas Atualizações</h3>
             <br>
-            <p>[04/04/2025]</p>
-            <br>
-            <dl>
-                <dt><strong>Jogos Atualizados:</strong></dt>
-                <dd>Schedule I (SteamRIP)</dd>
-                <dd>Schedule I (SteamGG)</dd>
-                <dd>Kingdom Come: Deliverance II (SteamRIP)</dd>
-            </dl>
-            <br>
-            <dl>
-                <dt><strong>Jogos Adicionados da SteamGG:</strong></dt>
-                <dd>inZOI</dd>
-                <dd>KARMA</dd>
-            </dl>
+            <p>[05/04/2025]</p>
             <br>
             <dl>
                 <dt><strong>Jogos Adicionados:</strong></dt>
-                <dd>The Last of Us Part II</dd>
-                <dd>Death Stranding</dd>
-                <dd>Victoria 3</dd>
-                <dd>Stormworks</dd>
-                <dd>A Plague Tale: Innocence</dd>
-                <dd>A Plague Tale: Requiem</dd>
-                <dd>Cities: Skylines</dd>
-                <dd>Cities: Skylines II</dd>
+                <dd>Bleach: Rebirth of Souls</dd>
+                <dd>South of Midnight</dd>
+                <dd>Far Cry</dd>
+                <dd>Far Cry 2</dd>
+                <dd>Far Cry 6</dd>
+                <dd>The Coffin of Andy and Leyley</dd>
+                <dd>Liar's Bar</dd>
+                <dd>Pacific Drive</dd>
+                <dd>Hollow Knight</dd>
             </dl>
             <div class="buttons">
                 <button onclick="copyChangelog()">Copiar</button>
@@ -457,14 +441,19 @@
                 <button class="dropdown-btn">Projetos</button>
                 <div class="dropdown-content">
                     <a class="install-button">CoohCooh Fonte</a>
-                    <a href="#">Em Breve</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Parceiros</button>
+                <div class="dropdown-content">
+                    <a href="https://discord.gg/FwvQMNAYF6" target="_blank">WikedStore</a>
                 </div>
             </div>
         </nav>
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="http://files.cdteam.xyz/r/logo_coohcooh.jpeg" alt="CDTeam Logo" />
+            <img src="./icons/logo_coohcooh.jpeg" alt="CoohCooh Logo" />
         </div>
         <div class="home-content">
             <h1>Prazer, me chamo <span>Lorenzo</span></h1>
