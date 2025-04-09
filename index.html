@@ -408,19 +408,44 @@
     <div class="logo-layout">
         <a class="logo">CDTeam Projetos</a>
     </div>
-    <div class="dialog-overlay" id="dialog-overlay" onclick="closeDialog(event)">
+    <div class="dialog-overlay" id="overlay-fontes" onclick="closeDialog(event)">
         <div class="dialog" onclick="event.stopPropagation()">
             <h3>Últimas Atualizações</h3>
             <br>
-            <p>[06/04/2025]</p>
+            <p>[09/04/2025]</p>
             <br>
             <dl>
-               <dt><strong>Todos os jogos da SteamGG foram removidos!</strong></dt> 
+                <dt><strong>Links corrigidos:</strong></dt>
+                <dd>Drive Beyond Horizons</dd>
             </dl>
             <br>
             <dl>
-                <dt><strong>Jogos Atualizados:</strong></dt>
-                <dd>Pacific Drive</dd>
+                <dt><strong>Jogos atualizados:</strong></dt>
+                <dd>BeamNG.drive (SteamRIP)</dd>
+            </dl>
+            <br>
+            <dl>
+                <dt><strong>Jogos Adicionados:</strong></dt>
+                <dd>The Invincible</dd>
+                <dd>Teardown</dd>
+                <dd>Pub Sim</dd>
+                <dd>No Man’s Sky</dd>
+                <dd>Bloons TD 6</dd>
+                <dd>Palworld</dd>
+                <dd>Mortal Kombat 1</dd>
+                <dd>Fallout 4</dd>
+                <dd>Fallout 3</dd>
+                <dd>American Truck Simulator</dd>
+                <dd>Funko Fusion</dd>
+                <dd>STAR WARS: Episode I</dd>
+                <dd>STAR WARS Jedi: Survivor</dd>
+                <dd>STAR WARS: Bounty Hunter</dd>
+                <dd>STAR WARS: Battlefront</dd>
+                <dd>STAR WARS: Battlefront Classic</dd>
+                <dd>STAR WARS: Dark Forces Remaster</dd>
+                <dd>STAR WARS Jedi: Fallen Order</dd>
+                <dd>Spec Ops: The Line</dd>
+                <dd>Titanfall 2</dd>
             </dl>
             <br>
             <div class="buttons">
@@ -431,6 +456,12 @@
         </div>
     </div>
 
+    <div class="dialog-overlay" id="overlay-hakina" onclick="closeDialog(event)">
+        <div class="dialog" onclick="event.stopPropagation()">
+            <h3>Em Breve</h3>
+        </div>
+    </div>
+
     <header>
         <nav>
             <a href="#" class="disactive">Inicio</a>
@@ -438,6 +469,7 @@
                 <button class="dropdown-btn">Projetos</button>
                 <div class="dropdown-content">
                     <a class="install-button">CoohCooh Fonte</a>
+                    <a class="hakina-button">Hakina Bot</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -469,20 +501,33 @@
     });
 </script>
 <script type="module">
-    const c = document.querySelectorAll(".install-button");
+    const a = document.querySelectorAll(".install-button");
 
-    c.forEach((t) => {
+    a.forEach((t) => {
         t.addEventListener("click", () => {
-            document.getElementById("dialog-overlay").style.visibility = "visible"
+            document.getElementById("overlay-fontes").style.visibility = "visible"
             document.addEventListener("keydown", handleEscapeKey);
         });
     });
+
+    const b = document.querySelectorAll(".hakina-button");
+
+    b.forEach((t) => {
+        t.addEventListener("click", () => {
+            document.getElementById("overlay-hakina").style.visibility = "visible"
+            document.addEventListener("keydown1", handleEscapeKey);
+        })
+    })
+
 </script>
 <script>
     function closeDialog(event) {
-        if (!event || event.target === document.getElementById("dialog-overlay")) {
-            document.getElementById("dialog-overlay").style.visibility = "hidden"
+        if (!event || event.target === document.getElementById("overlay-fontes")) {
+            document.getElementById("overlay-fontes").style.visibility = "hidden"
             document.removeEventListener('keydown', handleEscapeKey)
+        } else if (!event || event.target === document.getElementById("overlay-hakina")) {
+            document.getElementById("overlay-hakina").style.visibility = "hidden"
+            document.removeEventListener('keydown1', handleEscapeKey)
         }
     }
 
