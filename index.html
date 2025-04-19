@@ -412,23 +412,20 @@
         <div class="dialog" onclick="event.stopPropagation()">
             <h3>Últimas Atualizações</h3>
             <br>
-            <p>[13/04/2025]</p>
+            <p>[19/04/2025]</p>
             <br>
             <dl>
                 <dt><strong>Jogos atualizados:</strong></dt>
-                <dd>Schedule I (SteamRIP)</dd>
-                <dd>Marvel’s Spider-Man 2 (SteamRIP)</dd>
+                <dd>Bloons TD 6 (SteamRIP)</dd>
+                <dd>Baldur’s Gate 3 (SteamRIP)</dd>
             </dl>
             <br>
             <dl>
                 <dt><strong>Jogos Adicionados:</strong></dt>
-                <dd>Granny Escape Together</dd>
-                <dd>Dave The Diver</dd>
-                <dd>Crashlands 2</dd>
-                <dd>SnowRunner</dd>
-                <dd>Factorio</dd>
-                <dd>Ravenlok</dd>
-                <dd>Indiana Jones and the Great Circle</dd>
+                <dd>Rust</dd>
+                <dd>Oxygen Not Included</dd>
+                <dd>Forever Skies</dd>
+                <dd>Silent Hill 2</dd>
             </dl>
             <br>
             <div class="buttons">
@@ -439,12 +436,19 @@
         </div>
     </div>
 
-    <div class="dialog-overlay" id="overlay-hakina" onclick="closeDialog(event)">
+    <div class="dialog-overlay" id="overlay-pvccraft1" onclick="closeDialog(event)">
         <div class="dialog" onclick="event.stopPropagation()">
-            <h3>Em Breve</h3>
+            <h3>PVCCraft 1</h3>
+            <p></p>
         </div>
     </div>
 
+    <div class="dialog-overlay" id="overlay-pvccraft2" onclick="closeDialog(event)">
+        <div class="dialog" onclick="event.stopPropagation()">
+            <h3>PVCCraft 2</h3>
+            <p></p>
+        </div>
+    </div>
     <header>
         <nav>
             <a href="#" class="disactive">Inicio</a>
@@ -452,13 +456,6 @@
                 <button class="dropdown-btn">Projetos</button>
                 <div class="dropdown-content">
                     <a class="install-button">CoohCooh Fonte</a>
-                    <a class="hakina-button">Hakina Bot</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropdown-btn">Parceiros</button>
-                <div class="dropdown-content">
-                    <a href="https://discord.gg/FwvQMNAYF6" target="_blank">WikedStore</a>
                 </div>
             </div>
         </nav>
@@ -493,11 +490,11 @@
         });
     });
 
-    const b = document.querySelectorAll(".hakina-button");
+    const b = document.querySelectorAll(".cdcraft1-button");
 
     b.forEach((t) => {
         t.addEventListener("click", () => {
-            document.getElementById("overlay-hakina").style.visibility = "visible"
+            document.getElementById("overlay-cdcraft1").style.visibility = "visible"
             document.addEventListener("keydown1", handleEscapeKey);
         })
     })
@@ -508,8 +505,8 @@
         if (!event || event.target === document.getElementById("overlay-fontes")) {
             document.getElementById("overlay-fontes").style.visibility = "hidden"
             document.removeEventListener('keydown', handleEscapeKey)
-        } else if (!event || event.target === document.getElementById("overlay-hakina")) {
-            document.getElementById("overlay-hakina").style.visibility = "hidden"
+        } else if (!event || event.target === document.getElementById("overlay-cdcraft1")) {
+            document.getElementById("overlay-cdcraft1").style.visibility = "hidden"
             document.removeEventListener('keydown1', handleEscapeKey)
         }
     }

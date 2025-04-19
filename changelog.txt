@@ -1,16 +1,14 @@
-[13/04/2025]
+[19/04/2025]
 - Jogos Atualizados:
-    1. Schedule I (SteamRIP)
-    2. Marvel’s Spider-Man 2 (SteamRIP)
+    1. Bloons TD 6 (SteamRIP)
+    2. Baldur’s Gate 3 (SteamRIP)
+    3. Kingdom Come: Deliverance II (SteamRIP)
 
 - Jogos Adicionados:
-    1. Granny Escape Together
-    2. Dave The Diver
-    3. Crashlands 2
-    4. SnowRunner
-    5. Factorio
-    6. Ravenlok
-    7. Indiana Jones and the Great Circle
+    1. Rust
+    2. Oxygen Not Included
+    3. Forever Skies
+    4. Silent Hill 2
 
 
 
